@@ -29,7 +29,6 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 100%;
 		z-index: 0;
 	}
 
@@ -65,7 +64,7 @@
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		margin: 4px 2px;
+		margin: 4px 5px;
 		cursor: pointer;
 	}
 </style>
@@ -79,6 +78,9 @@
 		} else if (x == "23") {
 			var elem = document.getElementById("6_1-23");
 			elem.style.backgroundColor = "red"
+		} else if (x == "21") {
+			var elem = document.getElementById("6_1-21");
+			elem.style.backgroundColor = "red"
 		} else if (x == "24") {
 			var elem = document.getElementById("6_1-24");
 			elem.style.backgroundColor = "red"
@@ -89,15 +91,32 @@
 	function answer_2(x) {
 		if (x == "1") {
 			var elem = document.getElementById("6_2-1");
-			elem.style.backgroundColor = "green"
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("6_2-2");
+			elem.style.backgroundColor = "red"
 		} else if (x == "3") {
 			var elem = document.getElementById("6_2-3");
-			elem.style.backgroundColor = "red"
+			elem.style.backgroundColor = "green"
 		} else if (x == "4") {
 			var elem = document.getElementById("6_2-4");
 			elem.style.backgroundColor = "red"
-		} else if (x == "5") {
-			var elem = document.getElementById("6_2-5");
+		}
+		else { }
+	}
+	
+	function answer_3(x) {
+		if (x == "1") {
+			var elem = document.getElementById("6_3-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("6_3-2");
+			elem.style.backgroundColor = "green"
+		} else if (x == "3") {
+			var elem = document.getElementById("6_3-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("6_3-4");
 			elem.style.backgroundColor = "red"
 		}
 		else { }
@@ -107,19 +126,34 @@
 <body>
 <div class="container">
 	<div class="row">
-		<div class="pagetitle">Klausimėliai</div>
+		<div class="pagetitle">Paslaptingas laikas</div>
 	</div>
 </div>
 
 <div class="container">
 	<div class="row">
 		<div class="column">
-			<img src="6_1.PNG" alt="61">
 			<div class="question">Kiek kartų per parą valandų ir minučių rodyklės sutampa?</div>
+			<img src="6_1.PNG" alt="61">
 			<div class="answer">
 				<button id="6_1-24" class="button" onclick="answer_1(24)">24</button>
 				<button id="6_1-23" class="button" onclick="answer_1(23)">23</button>
 				<button id="6_1-22" class="button" onclick="answer_1(22)">22</button>
+				<button id="6_1-21" class="button" onclick="answer_1(21)">21</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question">Koks iš atsakymų tinka?</div>
+			<img src="6_2.PNG" alt="62">
+			<div class="answer">
+				<button id="6_2-1" class="button" onclick="answer_2(1)">5522</button>
+				<button id="6_2-2" class="button" onclick="answer_2(2)">5023</button>
+				<button id="6_2-3" class="button" onclick="answer_2(3)">5511</button>
+				<button id="6_2-4" class="button" onclick="answer_2(4)">5522</button>
 			</div>
 		</div>
 	</div>
@@ -128,14 +162,13 @@
 <div class="container">
 	<div class="row">
 		<div class="column">
-			<img src="6_2.PNG" alt="62">
-			<div class="question">Koks skaičius turi būti klaustuko vietoje? (Užuomina - kas tokio ypatingo šiuose
-				skaičiuose?)</div>
+			<div class="question">Kokį laiką rodys penktasis laikrodis?</div>
+			<img src="6_3.PNG" alt="63">
 			<div class="answer">
-				<button id="6_2-1" class="button" onclick="answer_2(1)">1</button>
-				<button id="6_2-3" class="button" onclick="answer_2(3)">3</button>
-				<button id="6_2-4" class="button" onclick="answer_2(4)">4</button>
-				<button id="6_2-5" class="button" onclick="answer_2(5)">5</button>
+				<button id="6_3-1" class="button" onclick="answer_3(1)">6:00</button>
+				<button id="6_3-2" class="button" onclick="answer_3(2)">5:35</button>
+				<button id="6_3-3" class="button" onclick="answer_3(3)">5:40</button>
+				<button id="6_3-4" class="button" onclick="answer_3(4)">5:50</button>
 			</div>
 		</div>
 	</div>
