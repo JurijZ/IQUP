@@ -105,6 +105,23 @@
 		}
 		else { }
 	}
+	
+	function answer_3(x) {
+		if (x == "1") {
+			var elem = document.getElementById("3_3-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("3_3-2");
+			elem.style.backgroundColor = "green"
+		} else if (x == "3") {
+			var elem = document.getElementById("3_3-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("3_3-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
 </script>
 
 <body>
@@ -132,7 +149,22 @@
 <div class="container">
 	<div class="row">
 		<div class="column">
-			<div class="question">O dabar biški sudėtingesnis (Užuomina - kas tokio ypatingo šiuose skaičiuose?)</div>
+			<div class="question">O dabar biški sudėtingesnis.</div>
+			<img src="3_3.PNG" alt="33">
+			<div class="answer">
+				<button id="3_3-1" class="button" onclick="answer_3(1)">1358</button>
+				<button id="3_3-2" class="button" onclick="answer_3(2)">2520</button>
+				<button id="3_3-3" class="button" onclick="answer_3(3)">2048</button>
+				<button id="3_3-4" class="button" onclick="answer_3(4)">3210</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question">O šitas uždavinukas kiek kitoks (Užuomina - kas tokio ypatingo šiuose skaičiuose?)</div>
 			<img src="3_2.PNG" alt="32">			
 			<div class="answer">
 				<button id="3_2-1" class="button" onclick="answer_2(1)">1</button>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+</head>
+
+<style>
+	.container {
+		position: relative;
+		width: 800px;
+		margin: auto;
+		margin-bottom: 35px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.column {
+		width: 100%;
+		padding: 5px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		z-index: 0;
+	}
+
+	div.pagetitle {
+		font-size: 50px;
+		font-weight: bold;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.question {
+		font-size: 30px;
+		padding: 1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.answer {
+		padding: 1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.button {
+		background-color: #E0E0E0;
+		font-size: 20px;
+		border: none;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+</style>
+
+<script>
+
+	function answer_1(x, id) {
+		if (x == "1") {
+			var elem = document.getElementById("7_1-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("7_1-2");
+			elem.style.backgroundColor = "red"
+		} else if (x == "3") {
+			var elem = document.getElementById("7_1-3");
+			elem.style.backgroundColor = "green"
+		} else if (x == "4") {
+			var elem = document.getElementById("7_1-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+
+	function answer_2(x) {
+		if (x == "1") {
+			var elem = document.getElementById("7_2-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("7_2-2");
+			elem.style.backgroundColor = "green"
+		} else if (x == "3") {
+			var elem = document.getElementById("7_2-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("7_2-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+	
+	function answer_3(x) {
+		if (x == "1") {
+			var elem = document.getElementById("7_3-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("7_3-2");
+			elem.style.backgroundColor = "green"
+		} else if (x == "3") {
+			var elem = document.getElementById("7_3-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("7_3-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+	
+	function answer_4(x) {
+		if (x == "1") {
+			var elem = document.getElementById("7_4-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("7_4-2");
+			elem.style.backgroundColor = "green"
+		} else if (x == "3") {
+			var elem = document.getElementById("7_4-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("7_4-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+	
+	function answer_5(x) {
+		if (x == "1") {
+			var elem = document.getElementById("7_5-1");
+			elem.style.backgroundColor = "green"
+		} else if (x == "2") {
+			var elem = document.getElementById("7_5-2");
+			elem.style.backgroundColor = "red"
+		} else if (x == "3") {
+			var elem = document.getElementById("7_5-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("7_5-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+</script>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="pagetitle">Ar nepamiršote paprasčiausių aritmetikos taisyklių?</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question"></div>
+			<img src="7_1.PNG" alt="1">
+			<div class="answer">
+				<button id="7_1-1" class="button" onclick="answer_1(1)">1/2</button>
+				<button id="7_1-2" class="button" onclick="answer_1(2)">3/5</button>
+				<button id="7_1-3" class="button" onclick="answer_1(3)">3/2</button>
+				<button id="7_1-4" class="button" onclick="answer_1(4)">5/3</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question"></div>
+			<img src="7_2.PNG" alt="2">			
+			<div class="answer">
+				<button id="7_2-1" class="button" onclick="answer_2(1)">18</button>
+				<button id="7_2-2" class="button" onclick="answer_2(2)">13</button>
+				<button id="7_2-3" class="button" onclick="answer_2(3)">11</button>
+				<button id="7_2-4" class="button" onclick="answer_2(4)">16</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question"></div>
+			<img src="7_3.PNG" alt="3">
+			<div class="answer">
+				<button id="7_3-1" class="button" onclick="answer_3(1)">0</button>
+				<button id="7_3-2" class="button" onclick="answer_3(2)">1</button>
+				<button id="7_3-3" class="button" onclick="answer_3(3)">16</button>
+				<button id="7_3-4" class="button" onclick="answer_3(4)">4</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question"></div>
+			<img src="7_4.PNG" alt="4">
+			<div class="answer">
+				<button id="7_4-1" class="button" onclick="answer_4(1)">1000</button>
+				<button id="7_4-2" class="button" onclick="answer_4(2)">10000</button>
+				<button id="7_4-3" class="button" onclick="answer_4(3)">100000</button>
+				<button id="7_4-4" class="button" onclick="answer_4(4)">1000000</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question"></div>
+			<img src="7_5.PNG" alt="5">
+			<div class="answer">
+				<button id="7_5-1" class="button" onclick="answer_5(1)">36</button>
+				<button id="7_5-2" class="button" onclick="answer_5(2)">1</button>
+				<button id="7_5-3" class="button" onclick="answer_5(3)">16</button>
+				<button id="7_5-4" class="button" onclick="answer_5(4)">32</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
