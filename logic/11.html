@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+</head>
+
+<style>
+	.container {
+		position: relative;
+		width: 800px;
+		margin: auto;
+		margin-bottom: 35px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.column {
+		width: 100%;
+		padding: 5px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		z-index: 0;
+	}
+
+	div.pagetitle {
+		font-size: 50px;
+		font-weight: bold;
+		padding: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.question {
+		font-size: 30px;
+		padding: 1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	div.answer {
+		padding: 1px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.button {
+		background-color: #E0E0E0;
+		font-size: 20px;
+		border: none;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 4px 2px;
+		cursor: pointer;
+	}
+	
+	.expando {
+	  display: none;
+	}
+
+	.expando:target {
+	  display: block;
+	}
+</style>
+
+<script>
+
+	function answer_1(x, id) {
+		if (x == "1") {
+			var elem = document.getElementById("11_1-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("11_1-2");
+			elem.style.backgroundColor = "red"
+		} else if (x == "3") {
+			var elem = document.getElementById("11_1-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("11_1-4");
+			elem.style.backgroundColor = "green"
+		} else if (x == "5") {
+			var elem = document.getElementById("11_1-5");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+
+	function answer_2(x) {
+		if (x == "1") {
+			var elem = document.getElementById("11_2-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("11_2-2");
+			elem.style.backgroundColor = "green"
+		} else if (x == "3") {
+			var elem = document.getElementById("11_2-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("11_2-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+	
+	function answer_3(x) {
+		if (x == "1") {
+			var elem = document.getElementById("11_3-1");
+			elem.style.backgroundColor = "green"
+		} else if (x == "2") {
+			var elem = document.getElementById("11_3-2");
+			elem.style.backgroundColor = "red"
+		} else if (x == "3") {
+			var elem = document.getElementById("11_3-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("11_3-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+	
+	function answer_4(x) {
+		if (x == "1") {
+			var elem = document.getElementById("11_4-1");
+			elem.style.backgroundColor = "red"
+		} else if (x == "2") {
+			var elem = document.getElementById("11_4-2");
+			elem.style.backgroundColor = "green"
+		} else if (x == "3") {
+			var elem = document.getElementById("11_4-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("11_4-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+	
+	function answer_5(x) {
+		if (x == "1") {
+			var elem = document.getElementById("11_5-1");
+			elem.style.backgroundColor = "green"
+		} else if (x == "2") {
+			var elem = document.getElementById("11_5-2");
+			elem.style.backgroundColor = "red"
+		} else if (x == "3") {
+			var elem = document.getElementById("11_5-3");
+			elem.style.backgroundColor = "red"
+		} else if (x == "4") {
+			var elem = document.getElementById("11_5-4");
+			elem.style.backgroundColor = "red"
+		}
+		else { }
+	}
+</script>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="pagetitle">Paprasti klausimai, bet reikia dėmesio.</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question">Kiek iš viso skylių marškinėliuose?</div>
+			<img src="11_1.PNG" alt="1">
+			<div class="answer">
+				<button id="11_1-1" class="button" onclick="answer_1(1)">2</button>
+				<button id="11_1-2" class="button" onclick="answer_1(2)">4</button>
+				<button id="11_1-3" class="button" onclick="answer_1(3)">6</button>
+				<button id="11_1-4" class="button" onclick="answer_1(4)">8</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question">Raskite atsakymą per 5 sekundes.</div>
+			<img src="11_2.PNG" alt="2">
+			<div style="text-align:center">
+				Niekaip neišeina rasti, štai <a href="#Expando1"> užuomina</a> 
+				<span class="expando" id="Expando1"> (perskaitykite klausimą dar kartą)</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="column">
+			<div class="question">Egzistuoja teisingi ir klaidingi teiginiai. Yra klaidinga manyti kad šis teiginys yra klaidingas</div>
+			<img src="11_3.PNG" alt="3">
+			<div class="answer">
+				<button id="11_3-1" class="button" onclick="answer_3(1)">Tiesa</button>
+				<button id="11_3-2" class="button" onclick="answer_3(2)">Netiesa</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
